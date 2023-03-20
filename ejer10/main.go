@@ -9,5 +9,5 @@ import (
 func main() {
 	u := new(models.User) //Creamos un objetos
 	u.AddUser(10, "Denis", time.Now(), true)
-	//fmt.Println(u)
+	fmt.Println(u)
 }
