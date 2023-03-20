@@ -4,8 +4,7 @@ import (
 	"time"
 )
 
-// Este paquete models solo lo usamos para meter modelos y estructuras
-
+// Objeto user
 type User struct {
 	Id        int
 	Name      string
@@ -13,9 +12,10 @@ type User struct {
 	Status    bool
 }
 
-func (this User) AddUser(id int, name string, createdAt time.Time, status bool) {
-	this.Id = id
-	this.Name = name
-	this.CreatedAt = createdAt
-	this.Status = status
+// Metodos para user
+func (user *User) AddUser(id int, name string, createdAt time.Time, status bool) {
+	user.Id = id
+	user.Name = name
+	user.CreatedAt = createdAt
+	user.Status = status
 }
