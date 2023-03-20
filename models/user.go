@@ -1,6 +1,7 @@
 package models
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -18,4 +19,8 @@ func (user *User) AddUser(id int, name string, createdAt time.Time, status bool)
 	user.Name = name
 	user.CreatedAt = createdAt
 	user.Status = status
+}
+
+func (user *User) GetUser() {
+	fmt.Println(user)
 }
